@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)" rx="24" />
+  <rect x="80" y="80" width="1040" height="180" rx="24" fill="#ffffff" opacity="0.15" />
+  <rect x="80" y="300" width="760" height="280" rx="24" fill="#ffffff" opacity="0.12" />
+  <rect x="900" y="300" width="200" height="200" rx="24" fill="#ffffff" opacity="0.12" />
+  <text x="110" y="150" fill="#ffffff" font-family="Inter, sans-serif" font-size="44" font-weight="700">Project Placeholder</text>
+  <text x="110" y="210" fill="#dbeafe" font-family="Inter, sans-serif" font-size="24">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+  <text x="110" y="360" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet</text>
+  <text x="110" y="400" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="20">nunc vulputate, ultricies ex non, vehicula velit. Nunc fermentum.</text>
+  <circle cx="1000" cy="450" r="40" fill="#2563eb" opacity="0.9" />
+  <circle cx="1080" cy="550" r="30" fill="#60a5fa" opacity="0.8" />
+</svg>
