@@ -16,27 +16,27 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Project Alpha',
+    title: 'Outhink Research',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-    tags: ['Web', 'Tool'],
-    tech: ['Lorem', 'Ipsum', 'Dolor', 'Sit'],
-    image: '/images/project-placeholder.svg',
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'A playground behind everything we build. Exploring ideas, funding the ones worth betting on, and turning curiosity into real businesses.',
+    tags: [],
+    tech: [],
+    image: '',
+    github: '',
+    live: '',
     featured: true,
   },
   {
-    title: 'Project Beta',
+    title: 'iotlabs.id',
     description:
-      'Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.',
+      'A platform designed to empower the next generation of innovators to explore, create, and collaborate in the Internet of Things (IoT) ecosystem.',
     tags: ['Web'],
-    tech: ['Amet', 'Consectetur', 'Adipiscing'],
-    image: '/images/project-placeholder.svg',
-    live: 'https://example.com',
+    tech: ['IoT', 'Tech', 'Education'],
+    image: '',
+    live: 'https://iotlabs.id',
     featured: true,
   },
-  {
+  /*{
     title: 'Project Gamma',
     description:
       'Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
@@ -63,7 +63,7 @@ const projects: Project[] = [
     image: '/images/project-placeholder.svg',
     github: 'https://github.com',
     live: 'https://example.com',
-  },
+  },*/
 ];
 
 const tags: Tag[] = ['All', 'Web', 'Mobile', 'Open Source', 'Tool'];
@@ -150,7 +150,7 @@ export default function Projects() {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 text-xs tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity"
                         >
-                          <ExternalLink size={12} /> Live
+                          <ExternalLink size={12} /> {project.title}
                         </a>
                       )}
                     </div>
@@ -210,7 +210,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs tracking-widest uppercase opacity-50 hover:opacity-100 transition-opacity"
                   >
-                    <ExternalLink size={11} /> Live
+                    <ExternalLink size={11} /> {project.title}
                   </a>
                 )}
               </div>

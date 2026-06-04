@@ -23,7 +23,7 @@ export default function Home() {
             <div className="relative w-28 h-28 md:w-36 md:h-36">
               <div className="w-full h-full border border-black overflow-hidden">
                 <img
-                  src="/images/profile.png"
+                  src="./images/profile.png"
                   alt="Naufal Al Majid"
                   className="w-full h-full object-cover grayscale"
                 />
