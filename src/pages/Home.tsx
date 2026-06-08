@@ -35,7 +35,7 @@ export default function Home() {
           {/* About me text — fills remaining space */}
           <div className="flex-1 min-w-0">
             <p className="text-sm leading-relaxed opacity-70 mb-4">
-              Hi i'm Naufal Al Majid, an electrical engineer.
+              hiii i'm Naufal Al Majid, an electrical engineer.
             </p>
             <p className="text-sm leading-relaxed opacity-70 mb-4">
               ----

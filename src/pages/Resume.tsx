@@ -17,7 +17,7 @@ const work = [
     location: 'Bandar Lampung, Indonesia',
     period: 'Aug 2025 — Present',
     bullets: [
-      'Building a platform for creation Internet of Things.',
+      'building a platform for creation Internet of Things.',
     ],
   },
   {
@@ -26,8 +26,8 @@ const work = [
     location: 'Remote',
     period: '2020 — 2024',
     bullets: [
-      'Writing content and researching topics related tech, selling and education.',
-      'Reaching 220k monthly organic visitors.',
+      'writing content and researching topics related tech, selling and education.',
+      'reach 220k monthly organic visitors.',
     ],
   },
 ];

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowLeft, Clock } from 'lucide-react';
 
-type BlogCategory = 'Build' | 'Career' | 'Productivity' | 'Talk' | 'Storage' ;
+type BlogCategory = 'build' | 'career' | 'productivity' | 'talk' | 'storage' ;
 type FilterCategory = BlogCategory | 'All';
 
 interface Post {
@@ -15,7 +15,7 @@ interface Post {
   published_at: string;
 }
 
-const categories: BlogCategory[] = ['Build', 'Career', 'Productivity', 'Talk', 'Storage'];
+const categories: BlogCategory[] = ['build', 'career', 'productivity', 'talk', 'storage'];
 
 const posts: Post[] = [
   {
@@ -50,7 +50,7 @@ Write tests that would catch the bugs you've actually shipped, not the ones that
 The counterintuitive truth is that sustainable speed requires occasional deliberate slowness. Taking ten minutes to write a clear commit message, spending an afternoon addressing real tech debt, doing a proper post-mortem after an incident — these aren't luxuries. They're how you keep the runway clear.
 
 Ship fast. But build the kind of codebase that makes fast feel effortless.`,
-    category: 'Build',
+    category: 'build',
     image_url: '/images/blog-2.svg',
     read_time: '6 min read',
     published_at: '2026-05-20',
@@ -85,7 +85,7 @@ The hidden cost isn't the time you spend writing the abstraction. It's the cogni
 Before you abstract, ask: am I removing duplication, or am I just hiding it? Sometimes the honest answer is the latter.
 
 Write code for the reader, not the compiler. And when in doubt, resist the urge to be clever.`,
-    category: 'Talk',
+    category: 'talk',
     image_url: '/images/blog-1.svg',
     read_time: '8 min read',
     published_at: '2026-05-12',
@@ -135,7 +135,7 @@ export default function Blog() {
       <div className="max-w-2xl mx-auto px-6 py-16">
         <button
           onClick={() => setSelected(null)}
-          className="inline-flex items-center gap-2 text-xs tracking-widest uppercase opacity-50 hover:opacity-100 transition-opacity mb-10"
+          className="inline-flex items-center gap-2 text-xs tracking-widest opacity-50 hover:opacity-100 transition-opacity mb-10"
         >
           <ArrowLeft size={13} /> Back
         </button>
@@ -149,7 +149,7 @@ export default function Blog() {
         </div>
 
         <div className="flex items-center gap-4 mb-4">
-          <span className="text-xs tracking-widest uppercase opacity-40">{selected.category}</span>
+          <span className="text-xs tracking-widest opacity-40">{selected.category}</span>
           <span className="flex items-center gap-1 text-xs opacity-40">
             <Clock size={10} /> {selected.read_time}
           </span>
@@ -172,7 +172,7 @@ export default function Blog() {
       <div className="mb-12 border-b border-black pb-10">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Blog</h1>
         <p className="text-sm opacity-50 max-w-lg leading-relaxed">
-          Writing on engineering, design, career growth, and the occasional life detour.
+          sometimes i just write, upload moments, or share thoughts in here.
         </p>
       </div>
 

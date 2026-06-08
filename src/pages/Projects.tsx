@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
-type Tag = 'All' | 'Web' | 'Mobile' | 'Open Source' | 'Tool';
+type Tag = 'All' | 'Web' ;
 
 interface Project {
   title: string;
@@ -18,7 +18,7 @@ const projects: Project[] = [
   {
     title: 'Outhink Research',
     description:
-      'A playground behind everything we build. Exploring ideas, funding the ones worth betting on, and turning curiosity into real businesses.',
+      'a playground behind everything we build. Exploring ideas, funding the ones worth betting on, and turning curiosity into real businesses.',
     tags: [],
     tech: [],
     image: '',
@@ -29,7 +29,7 @@ const projects: Project[] = [
   {
     title: 'iotlabs.id',
     description:
-      'A platform designed to empower the next generation of innovators to explore, create, and collaborate in the Internet of Things (IoT) ecosystem.',
+      'a platform designed to empower the next generation of innovators to explore, create, and collaborate in the Internet of Things (IoT) ecosystem.',
     tags: ['Web'],
     tech: ['IoT', 'Tech', 'Education'],
     image: '',
@@ -66,7 +66,7 @@ const projects: Project[] = [
   },*/
 ];
 
-const tags: Tag[] = ['All', 'Web', 'Mobile', 'Open Source', 'Tool'];
+const tags: Tag[] = ['All', 'Web'];
 
 export default function Projects() {
   const [activeTag, setActiveTag] = useState<Tag>('All');
@@ -79,8 +79,8 @@ export default function Projects() {
       {/* Header */}
       <div className="mb-12 border-b border-black pb-10">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Projects</h1>
-        <p className="text-sm opacity-50 max-w-lg leading-relaxed">
-          A selection of things I've built — side projects, open-source tools, and shipped products.
+        <p className="text-sm opacity-50 max-w-none">
+          every good stories started with question, challenges, two packs avolution and some cups high caffeine.
         </p>
       </div>
 
